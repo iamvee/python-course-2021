@@ -7,11 +7,14 @@ def factorial(n):
     return result
 
 
+def combination(n, k):
+    return factorial(n)/(factorial(k)*factorial(n-k))
+
+
 def pascal(n):
     result = []
     for k in range(n+1):
-        temp = factorial(n)/(factorial(k)*factorial(n-k))
-        result.append(temp)
+        result.append(combination(n, k))
 
     return result
 
