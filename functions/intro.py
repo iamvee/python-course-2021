@@ -8,6 +8,16 @@ def factorial(n):
 
 
 def combination(n, k):
+    """
+    calculate combination .. ..
+
+    >>> combination(3, 1)
+    3
+
+    :param n:
+    :param k:
+    :return:
+    """
     return factorial(n)/(factorial(k)*factorial(n-k))
 
 
